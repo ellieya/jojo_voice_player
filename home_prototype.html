@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- CSS -->
+        <link href="css/color.css" rel="stylesheet" type="text/css">
+        <link href="css/home.css" rel="stylesheet" type="text/css">
+        <link href="css/shared.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- Audio -->
+        <div>
+            <audio id="audio-jonathan">
+                <source src="audio/jonathan.ogg" type="audio/ogg">
+            </audio>
+            <audio id="audio-joseph">
+                <source src="audio/joseph.ogg" type="audio/ogg">
+            </audio>
+            <audio id="audio-jotaro">
+                <source src="audio/jotaro.ogg" type="audio/ogg">
+            </audio>
+            <audio id="audio-josuke">
+                <source src="audio/josuke.ogg" type="audio/ogg">
+            </audio>
+        </div>    
+        <!-- Section 1: Home -->
+        <div>
+            <div id="title">
+            <img src="http://i.imgur.com/m497M4l.png">
+            <h1><span style="font-size:50px">HAPPY JOY-PY</span><br>VOICE PLAYER</h1>
+            </div>
+            <div id="main-content">
+                <br><br>
+                <div class="face-container">
+                    <img class="face" src="http://vignette1.wikia.nocookie.net/jjba/images/2/23/JonathanAv.png/revision/latest/scale-to-width-down/120?cb=20160414202520" onclick="giveAudio(0)">
+                    <span>PHANTOM BLOOD</span>
+                </div>
+                <div class="face-container">
+                    <img class="face" src="http://vignette2.wikia.nocookie.net/jjba/images/1/13/JosephAv.png/revision/latest/scale-to-width-down/120?cb=20160414212207" onclick="giveAudio(1)">
+                    <span>BATTLE TENDENCY</span>
+                </div>
+                <div class="face-container">
+                    <img class="face" src="http://vignette1.wikia.nocookie.net/jjba/images/a/a5/JotaroAv.png/revision/latest?cb=20170203051344" onclick="giveAudio(2)">
+                    <span>STARDUST CRUSADERS</span>
+                </div>
+                <div class="face-container">
+                    <img class="face" src="http://vignette4.wikia.nocookie.net/jjba/images/f/fc/JosukeAv.png/revision/latest/scale-to-width-down/120?cb=20160607061915" onclick="giveAudio(3)">
+                    <span>DIAMOND IS UNBREAKABLE</span>
+                 </div>
+                <br><br><br>
+                <h2>Pick a character to hear their voice!</h2>
+            </div>
+        </div> <!-- end S1 home -->
+    </body>
+    <script>
+        
+        
+/**********************        
+
+FUNCTIONS SECTION
+
+***********************/
+function giveAudio(audioNum){
+                switch(audioNum) {
+                case 0:
+                    //Jonathan Joestar
+                    document.getElementById("audio-jonathan").play();
+                    break;
+                case 1:
+                    //Joseph Joestar
+                    document.getElementById("audio-joseph").play();
+                    break;
+                case 2:
+                    //Jotaro Joestar
+                    document.getElementById("audio-jotaro").play();
+                    break;
+                case 3:
+                    //Josuke Higashigata
+                    document.getElementById("audio-josuke").play();
+                    break;
+                }
+            }
+        
+        
+    </script>
+</html>

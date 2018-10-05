@@ -1,0 +1,63 @@
+Simple Website About Figure Skating Jumps
+Videos...
+
+Yuzuru Hanyuu, Quad Salchow:
+https://www.youtube.com/watch?v=4ms8jDSlWTU
+
+Kevin Reynolds, double Quad:
+https://www.youtube.com/watch?v=7SREVPL5Ne8
+
+These I need to figure out:
+https://www.youtube.com/watch?v=cOATuuEjQUI
+https://www.youtube.com/watch?v=Bk6qrBrqAqo
+https://www.youtube.com/watch?v=EkRAfuY6uCA
+https://www.youtube.com/watch?v=qgNTjcF9ngA
+https://www.youtube.com/watch?v=hgXKJvTVW9g
+https://www.youtube.com/watch?v=ecKnyyuMsmw
+https://www.youtube.com/watch?v=qMms5JKZM8g
+https://www.youtube.com/watch?v=VFwZiA0YNEQ
+
+
+
+HOME
+The TOE JUMPS
+	Toe Loop (T)
+	Flip (F)
+	Lutz (Lz)
+The EDGE JUMPS
+	Salchow (S)
+	Loop (Lo)
+	Axel (A)
+The ROTATIONS
+The COMBINATION JUMP
+
+
+I want to have all the other pages LOAD, so that the user won't have overwhelming lag.
+
+
+When HOME:
+Navigation? Circle in the middle of the page.
+Fixed navigation at the top of the page will disappear.
+
+When going to OTHER, animation:
+1) original size
+2) slightly larger size
+3) significant drop in size
+4) small size
+5) display: none
+Make sure it is vertical-align:center;
+
+
+When other:
+Navigation? Placed ontop of the page; fixed
+When going to home, animation:
+1) fadeout
+
+
+OTHER page format:
+video playlist looping in the background
+all videos will have a respective description.
+Upon video load, 2 items will pop up on the left & right sides.
+Left: Jump type
+Right: Skater name
+

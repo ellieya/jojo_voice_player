@@ -1,0 +1,98 @@
+body {
+    position:relative;
+    height:100vh;
+    background-image:linear-gradient(to bottom, pink 40%, cyan);
+    background-repeat: no-repeat;
+}
+#main-content {
+    position:absolute;
+    text-align:center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+#title {
+    max-width:400px;
+    position:absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:50%;
+    margin-bottom:16%;
+    animation: fadein 2s;
+    white-space: nowrap;
+}
+#title h1 {
+    text-align:center;
+    color:white;
+    text-shadow: 0 0 3px black;
+    font-style:italic;
+}
+
+h2 {
+    text-align:center;
+    color:white;
+    text-shadow: 0 0 3px black;
+}
+
+#title img{
+    max-width:400px;
+}
+#main-content img {
+    border-radius:100%;
+    width:150px;
+    margin:0 5px;
+    vertical-align: middle;
+    transition: width 0.7s;
+    filter:grayscale(100%);
+    cursor:pointer;
+    animation: popup 1.5s;
+}
+#main-content img:hover {
+    width:200px;
+    filter:grayscale(0%);
+}
+.item {
+    display:inline-block;
+    border-radius:100%;
+    width:200px;
+    height:200px;
+    border:1px solid black;
+    margin:5px;
+}
+
+
+#main-content .face-container {
+    display:inline-block;
+    position:relative;
+}
+
+.face-container span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    text-shadow: 0 0 1px black;
+    background-image: linear-gradient(to right, transparent, black, transparent);
+    width:inherit;
+    width:200px;
+    padding:5px;
+    display:none;
+}
+
+@keyframes popup {
+    0% {width:1px; filter:grayscale(0%);}
+    30% {width:200px;filter:grayscale(0%);}
+    50% {width:150px;filter:grayscale(50%);}
+    60% {filter:grayscale(75%;)}
+    100% {width:150px;}
+}
+
+@keyframes fadein {
+    0% {opacity:0;}
+    50% {opacity:0;}
+    51% {opacity:0.3;}
+    100% {opacity:1;}
+}

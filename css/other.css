@@ -1,0 +1,73 @@
+/*
+
+SIDEBAR.CSS
+
+*/
+
+
+#sidebar {
+    position:fixed;
+    bottom:25px;
+    -webkit-user-select:none;
+}
+
+#sidebar li {
+    position:relative;
+    list-style-type: none;
+    width:300px;
+    height:60px;
+    background-color:pink;
+    background-image:linear-gradient(to top, pink, white);
+    border-radius: 0 10px 10px 0;
+    left:-180px;
+    cursor:pointer;
+    transition: left 0.5s;
+}
+li span {
+    display:inline-block;
+    padding:5px;
+    width:inherit;
+}
+li .small {
+    text-transform: uppercase;
+    position:absolute;
+    width:70%;
+    text-align:left;
+    font-size:10px;
+    z-index:900;
+    background-image: linear-gradient(to right, white, transparent);
+    height:15px;
+}
+li .small span{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+li .large {
+    width:inherit;
+    position:absolute;
+    background-image: linear-gradient(to left, hotpink, transparent);
+    height:inherit;
+    border-radius:inherit;
+    z-index:800;
+}
+.large span {
+    font-family:impact;
+    font-style:italic;
+    text-align:right;
+    color:white;
+    text-shadow: 0 3px 3px black;
+    padding-right: 25px;
+    vertical-align: middle;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+#sidebar li img{
+    border-radius:inherit;
+}
+
+/* PSUEDO CLASS SECTION */
+#sidebar li:hover{
+    left:0;
+}

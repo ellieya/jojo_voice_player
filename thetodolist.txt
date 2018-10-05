@@ -1,0 +1,16 @@
+To-Do:
+
+High priority:
+-Video that covers the entire background, without causing a scroll (might be as simple as fixed position)
+-Figure out all the jumps & write a small paragraph about them
+
+
+-Figure out how to make height = 100% when position is relative
+
+
+
+Low Priority:
+-Prep the CSS animations
+-Understand JS animations
+-Figure out how to have other pages load. Obviously, we need AJAX, PHP, & a server to do this.
+-Go in depth on the paragraphs
